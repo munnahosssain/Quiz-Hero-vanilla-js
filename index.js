@@ -129,7 +129,6 @@ document.querySelector("#submit").addEventListener("click", () => {
 		localStorage.setItem(
 			"results",
 			JSON.stringify([
-				...storage,
 				{
 					marks: totalMark,
 					examTime: timeTaken.innerText,
@@ -179,3 +178,6 @@ document.querySelector("#submit").addEventListener("click", () => {
 	window.scrollTo(0, 0);
 });
 
+document.getElementById('blog').addEventListener('click', function () {
+	window.location.href = './blog.html'
+});
