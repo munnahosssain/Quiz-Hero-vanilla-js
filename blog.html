@@ -1,15 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="dark" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Blog Square</title>
 </head>
 
 <body>
-    <h1>This is Bloggggggggggggggggggggggggggggg</h1>
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content text-center grid sm:grid-cols-2">
+            <div tabindex="1" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium text-start">
+                    Different between map, filter, forEach, and find in JavaScript
+                </div>
+                <div class="collapse-content text-start text-start">
+                    <p>.map() when you want to transform elements in an array.</p><br>
+                    <p>.filter() when you want to select a subset of multiple elements from an array.</p> <br>
+                    <p>.forEach() is great you need to execute a function for each individual element in an array.
+                        Good practice is that you should use .forEach() when you can't use other array methods to
+                        accomplish your goal. I know this may sound vague, but .forEach() is a generic tool… only
+                        use it when you can't use a more specialized tool.</p> <br>
+                    <p>.find() When you want to select a single element from an array.</p>
+                </div>
+            </div>
+            <div tabindex="2" class="mt-2 mb-2 collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium text-start">
+                    Difference between local storage, session storage and cookies in JavaScript
+                </div>
+                <div class="collapse-content text-start">
+                    <p>The storage capacity of local storage is 5MB/10MB. As it is not session-based, it must be deleted
+                        via javascript or manually.</p> <br>
+                    <p>It's session-based and works per window or tab. This means that data is stored only for the
+                        duration of a session, i.e., until the browser (or tab) is closed</p><br>
+                    <p>The storage capacity of Cookies is 4KB. Both clients and servers can read and write the cookies
+                    </p>
+                </div>
+            </div>
+            <div tabindex="3" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium text-start">
+                    What is an event loop, how does it work?
+                </div>
+                <div class="collapse-content text-start">
+                    <p>An event loop is a programming construct that allows for efficient, non-blocking I/O in
+                        event-driven programming. It is used in programming languages such as JavaScript, Python, and
+                        Node.js to handle asynchronous and event-based programming.</p><br>
+                    <p>Here's a simple example of how an event loop works in JavaScript: <br>
+                        1. Registering some event handlers, such as a click handler for a
+                        button.<br>
+                        2. User clicks the button, an event is triggered and added to the event queue.<br>
+                        3. The event loop continuously checks the event queue for new events.<br>
+                        4. When an event is found in the queue, the associated event handler is executed.<br>
+                        5. The event loop then returns to checking the event queue for new events.</p>
+                </div>
+            </div>
+            <div tabindex="4" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium text-start">
+                    quizTimer() function:
+                </div>
+                <div class="collapse-content text-start">
+                    <p>quizTimer() function is used to create a countdown for quizzes, it has a
+                        parameter(dismiss) that
+                        takes a boolean value that decides to dismiss or start the timer.
+                        <br><br>
+                        If the value is false the function clears the interval timer and effectively stops the timer. If
+                        the value is true the function runs every 1000 milliseconds and calculates the time.
+                    </p>
+                </div>
+            </div>
+            <div tabindex="5" class="mt-2 mb-2 collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium text-start">
+                    chooseQuiz() function:
+                </div>
+                <div class="collapse-content text-start">
+                    <p>chooseQuiz() function has two parameters that are index and givenAns.The
+                        function checks if an object exists in an array called answers. If it exists, the function
+                        updates the givenAns property of the object with the new value. If it doesn’t exists, the
+                        function creates a new object and pushes it to the answers array. Finally, the function calls
+                        another function called displayAnswers to show the answers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
