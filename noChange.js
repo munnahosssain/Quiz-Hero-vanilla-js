@@ -25,7 +25,7 @@ const quizTimer = (dismiss) => {
         countHtml.classList.add("text-red-300");
       }
     }
-  }, 10000);
+  }, 1000);
 };
 
 // display quiz options
